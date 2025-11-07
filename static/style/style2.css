@@ -1,0 +1,41 @@
+	@font-face{
+    font-family: 'HomeVideo';
+    src: local("HomeVideo"),
+    url('fonts/HomeVideo-Regular.otf') format("woff"),
+    url('fonts/HomeVideo-Regular.otf') format("woff2");
+	}
+
+
+    .buttonToolBar
+    {
+        
+        font-family: "HomeVideo" ;
+        font-size: 20px;
+        background-color: rgba(240, 255, 255, 0);
+        margin-left: 3px;
+        border-color: rgb(0, 0, 0);
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .logofont{
+        text-align: left;
+		font-size: 65px;
+		padding: 12px;
+        padding-bottom: 0px;
+		padding-left: 20px;
+        font-family: "HomeVideo" ;
+        color: aliceblue;
+        margin-bottom: 0px;
+        
+    }
+    .logofont1
+    {
+        text-align: left;
+		font-size: 35px;
+	
+		padding-left: 20px;
+        font-family: "HomeVideo" ;
+        color: rgba(240, 248, 255, 0.619);
+        margin-top: 0px;
+    }

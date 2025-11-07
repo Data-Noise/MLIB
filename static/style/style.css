@@ -1,0 +1,430 @@
+
+body{
+    /* background-color: #000000; */
+    /* background: url(plastic-9.png); */
+    background: url(pattern.png);
+    background-size: 8%;
+    /* background-repeat: space; */
+    /* background-clip: content-box; */
+    /* background-size: cover; */
+}
+/* span{font-style: italic;} */
+.text1{color:blueviolet }
+.image-file{max-width: 70px;}
+p {color: azure; font-size: 30px;}
+a{color: azure; font-size: 30px;}
+.ol_1{color:aliceblue; font-size: 30px;}
+/* li{color:aliceblue; font-size: 30px;} */
+.img-logo{
+    background-color: rgb(34, 34, 34);
+    max-width: 190px;
+    border-style:solid;
+    border-color: rgb(138, 94, 231);
+    border-radius: 30px;
+    /* height: 8px; */
+    border-width: 3px;
+   
+    margin: 0.5%;
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 90px;
+    border-bottom-left-radius: 0%;
+    border-top-left-radius: 90px;
+}
+
+
+.server-inf{
+    display: inline;
+font-size: 30px;
+color: aliceblue;
+
+background-color: rgb(34, 34, 34);
+height: 20%;
+
+margin: 2%;
+margin-top: 0.5%;
+/* margin-trim: 20%; */
+padding: 1%;
+margin-left: 0%;
+
+/* рамка */
+
+border-radius: 25px;
+border-style:solid;
+border-color: rgb(138, 94, 231);
+border-top-left-radius: 0%;
+/* border-top-right-radius: 0%; */
+/* border-top-style: none; */
+}
+
+.button-tools{
+
+    background-image: url(button1.png);
+    background-size: cover; 
+
+    /* border-top-left-radius: 35px; */
+    /* border-bottom-left-radius: 35px; */
+
+    border-style:solid;
+    border-color: rgb(138, 94, 231);
+    height: 60px;
+    width: 90%;
+    margin: 1%;
+    /* margin-left: 3%; */
+    margin-right: 0%;
+    /* шрифт */
+    font-size: 150%;
+    font-style: normal;
+    color:aliceblue;
+    transition: 0.2s;
+}
+
+.button-tools-start
+{
+    background-image: url(button1.png);
+    background-size: cover;
+
+    /* border-top-left-radius: 35px; */
+    /* border-bottom-left-radius: 50px; */
+    border-top-right-radius: 50px;
+
+    border-style:solid;
+    border-color: rgb(138, 94, 231);
+    height: 60px;
+    width: 90%;
+    margin: 1%;
+    margin-left: 1%;
+    margin-right: 0%;
+    /* шрифт */
+    font-size: 150%;
+    font-style: normal;
+    color:aliceblue;
+    transition: 0.2s;
+
+}
+
+.button-tools-start:hover
+{
+
+    background-image: url(button1_act.png);
+    background-size: cover;   
+}
+
+.button-tools-end{
+    background-image: url(button1.png);
+    background-size: cover; 
+
+    /* border-top-left-radius: 35px; */
+    /* border-bottom-left-radius: 50px; */
+    border-bottom-right-radius: 50px;
+
+    border-style:solid;
+    border-color: rgb(138, 94, 231);
+    height: 60px;
+    width: 90%;
+    margin: 1%;
+    margin-left: 1%;
+    margin-right: 0%;
+    /* шрифт */
+    font-size: 150%;
+    font-style: normal;
+    color:aliceblue;
+    transition: 0.2s;
+
+}
+
+.button-tools-end:hover
+{
+
+    background-image: url(button1_act.png);
+    background-size: cover;   
+}
+.button-tools:hover
+{
+
+    background-image: url(button1_act.png);
+    background-size: cover;   
+}
+
+.logo{
+    /* background-color: rgb(91, 28, 149); */
+     
+    display: box;
+    background-image: url(logo_neuron.png);
+    background-size:cover ;
+    
+     
+    height: 150px; 
+
+    margin: 1.5%;
+    margin-bottom: 0%;
+    /* рамка */
+    border-radius: 25px;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+    border-style:solid;
+    border-color: rgb(138, 94, 231);
+
+    border-top-left-radius: 100px;
+
+    
+}
+.frame_up{
+    display: block;
+    background-color: rgb(34, 34, 34);
+    height: 20%;
+    margin: 1.5%;
+    margin-bottom: 0%;
+    margin-top: 0%;
+
+    border-radius: 25px;
+    
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
+    background-image: url(frame_simple_up.png);
+    background-size: contain;
+}
+
+.frame_down{
+    background-image: url(frame_simple_up.png);
+    background-size: contain;
+    display: block;
+    background-color: rgb(34, 34, 34);
+    height: 20%;
+    margin: 1.5%;
+    margin-bottom: 0%;
+    margin-top: 0%;
+    /* рамка */
+    border-radius: 25px;
+/*
+    border-style:solid;
+    border-color: rgb(138, 94, 231);*/
+    padding: 0.5%;
+    padding-left: 1%;
+
+
+    border-style:solid;
+    border-color: rgb(191, 198, 225);
+    border-left-style: none;
+    border-right-style: none;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-style: none;
+
+    
+
+
+}
+
+.main_label
+{
+   
+   
+    /* position: fixed; */
+  
+    width: 75%;
+    height: 100%;
+
+    /* border: 8px  ; */
+    padding: 0;
+    margin: 1.5%;
+
+}
+
+.frame_up_article{
+    background-image: url(frame_simple.png);
+    background-size: cover;
+    display: block;
+    background-color: rgb(34, 34, 34);
+    height: 40px;
+    
+    margin-bottom: 0%;
+    margin-top: 0%;
+    /* рамка */
+
+        border-style:solid;
+    border-color: rgb(191, 198, 225);
+    border-left-style: none;
+    border-right-style: none;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-style: none;
+
+}
+.text{
+    text-align: center;
+    color:aliceblue;
+    font-size: 40px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.one
+{
+width: 25%;
+margin: 1.5%;
+
+}
+p{ 
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+.two{
+    display: flex;
+    padding: 0px;
+   
+}
+.tools{
+    /* background-color:#201e27; */
+    background-color:rgba(103, 61, 255, 0.459);
+    width: 100%;
+    
+    padding-top: 2%;
+    
+    border-radius: 70px;
+    
+    /* border-style:solid; */
+    /* border-color: rgb(138, 94, 231); */
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
+    border-bottom-left-radius: 0%;
+    
+}
+
+.frame-tools
+{
+    /* display: inline-block; */
+    /* background-color: rgb(34, 34, 34); */
+    background-image: url(frame.png);
+    /* image-orientation: flip; */
+    background-size: cover;
+    background-position: 60% 0px;
+    height: 40px;
+    width: 100%;
+
+    /* margin: 1.5%; */
+   
+    margin-bottom: 0%;
+    margin-top: 0%;
+  
+    /* border-radius: 25px; */
+    border-style:solid;
+    border-color: rgb(191, 198, 225);
+    border-left-style: none;
+    border-right-style: none;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-style: none;
+
+} 
+
+
+.info{
+    background-color:#201e27;
+    background-image: url(pattern2.svg);
+    background-size: 25%;
+   
+    padding: 30px;
+    font-size: 50px;
+    /* position: fixed; */
+    
+    display: flexbox;
+    height: 100%;
+    padding-top: 20px ;
+    
+
+ 
+    /* рамка */
+
+    border-top-left-radius: none;
+    border-top-right-radius: none;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-style:solid;
+    border-color: rgb(138, 94, 231);
+   /* border-top-style: none;*/
+  
+}
+
+
+
+
+.neuro-module{
+    display: flex;
+    margin: 2%;
+    border-width: 3px;
+    background: rgba(98, 0, 255, 0.539);
+    border-color: rgb(98, 0, 255);
+    border-style:dashed;
+    padding: 6px;
+    border-radius: 20px;
+}
+.neuro-module>input
+{
+border-radius: 30px;
+border-style:solid;
+border-color: blueviolet;
+background-color: darkslateblue;
+margin-left: 70%;
+
+font-size: 40px;
+color: aliceblue;
+}
+
+
+.attetion{
+    display: flex;
+    margin: 2%;
+    border-width: 3px;
+    background: rgba(98, 0, 255, 0.539);
+    border-color: rgb(98, 0, 255);
+    border-style:dashed;
+    padding: 6px;
+    border-radius: 20px;
+    margin-bottom: 4%;
+}
+.attetion-image{
+    display:block;
+    margin: auto;
+    scale: 100%;
+}
+.attetion-text{  
+    display:inline-block;
+    margin-left: 3%;
+    font-family:'Courier New', Courier, monospace;
+    }
+
+
+.info-text>p{
+    font-size: 30px;
+    margin-left: 3%;
+    
+    margin-bottom: 3%;
+    /* не мои команды */
+    user-select: none;
+    pointer-events: none
+
+}
+.info-text>progress{
+  scale: 50px;
+    margin-left: 3%;
+    /* height: 700px; */
+    /* size: 700px; */
+    width: 94%;
+    height: 50px;
+    
+    
+    /* background:deeppink; */
+}
+/*  
+.project-image{
+    background-image: url(v_logo.png);
+    background-repeat: space;
+    background-size: cover;
+     background-size: 50%; 
+    height: 25%;
+    width: 30%;
+    margin: 5%;
+    margin-right: 30%;
+}
+
+*/
