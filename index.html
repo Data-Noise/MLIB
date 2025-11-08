@@ -14,10 +14,10 @@
 		output: {font: "mathjax-newcm"}}
 	</script>
 	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
-	<title>HEXLIB </title>	
+	<title>M-LIB </title>	
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="static/style/style2.css">
+	<link rel="stylesheet" href="static/style/style.css">
 
 </head>
 <body style="
@@ -44,14 +44,7 @@
 		margin-left: auto;
 		margin-right: auto;
 
-		/* в отдельный файл 
-		background-image: url(Logo.png);
-		background-position-x: center;
-		background-position-y: center;
-		background-size: 1280px 340px;
-		*/
-		
-		background-image: url(fractal.png);
+		background-image: url(static/fractal.jpg);
 		background-position-x: center;
 		background-size: 1420px 2100px;
 		background-attachment: fixed;
@@ -67,17 +60,13 @@
 		margin-left: auto;
 		margin-right: auto;
 		background-color: rgba(67, 67, 67, 0.52);
-		backdrop-filter: blur(15px);
+		backdrop-filter: blur(0px);
 		">
 
 							<p class="logofont"
-			><span style="color: blueviolet;">M</span>-LIB</p>
+			><span style="color: rgb(221, 39, 23);">M</span>-LIB</p>
 			<p class="logofont1">ARTICLE STORAGE </p>
-			</div>
-
-		
-		
-	
+			</div>	
 		</div>
 		
 		<div style="
@@ -90,13 +79,20 @@
 		margin-top: 0%;
 		margin-bottom: 0%;
 		
-		border-style:solid;
-    	border-color: rgba(255, 255, 255, 0.541);
-    	border-left-style: none;
-    	border-right-style: none;
+
 		
 
 		">
+		<div style="width: 15px; background-color: rgb(104, 101, 101);
+		margin-left: 5px;
+		margin-right: 5px;
+		height: 90%;
+		margin-top: auto;
+		margin-bottom: auto;
+		"> </div>
+
+		
+
 		<button class="buttonToolBar" style="
 		
 		height: 90%;
@@ -108,7 +104,7 @@
 		
 		height: 90%;
 		">
-			Articles
+			Download
 		</button>
 
 		<button class="buttonToolBar" style="
@@ -117,6 +113,13 @@
 		">
 			About
 		</button>
+		<button class="buttonToolBar" style="
+		height: 90%;
+		">
+			Articles
+		</button>
+
+
 	</div>
 		
 		<div id="two" style="
@@ -124,7 +127,7 @@
 		display: flex;
 		background-color: rgb(104, 101, 101);
 		/**/
-		background-image: url(fractal.png);
+		background-image: url(static/fractal.jpg);
 		background-position-x: center;
 		background-size: 1420px 2100px;
 		background-attachment: fixed;
@@ -139,7 +142,7 @@
 			margin: 2%;
 			background-color: rgba(67, 67, 67, 0.52);
 			backdrop-filter: blur(15px);
-			height: 400px;
+			height: 200px;
 			width: 300px;
 			">
 
@@ -147,10 +150,13 @@
 				background-color: rgb(152, 157, 159);
 				height: 40px;
 				width: 100%;
-				"></div>
-			
-				<button class="buttonToolBar">Articles</button>
-			
+
+
+				">
+				<p class= "Title_2">Menu</p>		
+			</div>
+				<button class="buttonMenu">UP</button>
+				<button class="buttonMenu">Down</button>
 			</div>	
 
 			<div style="
@@ -161,36 +167,57 @@
 			background-color: rgba(67, 67, 67, 0.52);
 			backdrop-filter: blur(15px);
 			flex-grow: 1;
-			height: 1000px;
+			
+			min-height: 1000px;
 			width: 600px;
 			">
 				<div style="
 				background-color: rgb(152, 157, 159);
 				height: 40px;
 				width: 100%;
-
-
 				">
-				<p>Welcome</p>	
+				<p class= "Title_2">Welcome</p>	
+
+
+					<article class="articleText">
+		        <p>Добро пожаловать.</p>
+        <p>Я написал этот сайт, чтобы создать удобный архив и место для публикации своих лекций и статей. Большинство материалов на этом сайте буду посвящены математике <span style="color:blueviolet ; background-color: rgba(0, 0, 0, 0.655);">машинного обучения</span>   и <span style="color:blueviolet ; background-color: rgba(0, 0, 0, 0.655);"> киберфилософии</span>. </p>
+        <p>Надеюсь, вы найдёте на этом сайте что-нибудь интересное для себя. </p>
+					</article>	
+				
 			</div>
 					
 				
 			</div>
+
+
+
+			
 		</div>
 
 		<div style="
-		display: inline-block;
+		display: flex;
 		background-color: rgb(152, 157, 159);
 		height: 50px;
 		width: 95%;
 		margin-top: 0%;
 		margin-bottom: 1%;
+		margin-left: auto;
+		margin-right: auto;
 
-		border-style:solid;
-    	border-color: rgba(255, 255, 255, 0.541);
-    	border-left-style: none;
-    	border-right-style: none;
-		"></div>
+
+		">
+				<div style="width: 15px; background-color: rgb(104, 101, 101);
+			margin-left: 5px;
+			margin-right: 5px;
+			height: 90%;
+			margin-top: auto;
+			margin-bottom: auto;
+		"> </div>
+		<p class="buttonToolBar">
+			Data-Noise || 2025
+		</p>
+	</div>
 
 		
 	</div>
