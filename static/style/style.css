@@ -1,0 +1,86 @@
+	@font-face{
+    font-family: 'HomeVideo';
+    src: local("HomeVideo"),
+    url('fonts/HomeVideo-Regular.otf') format("woff"),
+    url('fonts/HomeVideo-Regular.otf') format("woff2");
+	}
+
+    @font-face{
+    font-family: 'HomeVideoBold';
+    src: local("HomeVideoBold"),
+    url('fonts/HomeVideo-Bold.otf') format("woff"),
+    url('fonts/HomeVideo-Bold.otf') format("woff2");
+	}
+
+
+
+    .buttonToolBar
+    {
+        
+        font-family: "HomeVideo" ;
+        font-size: 20px;
+        background-color: rgba(240, 255, 255, 0);
+        margin-left: 3px;
+        border-color: rgb(0, 0, 0);
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .logofont{
+        text-align: left;
+		font-size: 65px;
+		padding: 12px;
+        padding-bottom: 0px;
+		padding-left: 20px;
+        font-family: "HomeVideo" ;
+        color: aliceblue;
+        margin-bottom: 0px;
+        
+    }
+    .logofont1
+    {
+        text-align: left;
+		font-size: 35px;
+	
+		padding-left: 20px;
+        font-family: "HomeVideo" ;
+        color: rgba(240, 248, 255, 0.619);
+        margin-top: 0px;
+    }
+    .Title_2
+    {
+        text-align: left;
+		font-size: 35px;
+	
+		padding-left: 20px;
+        font-family: "HomeVideo" ;
+        color: rgb(221, 39, 23);
+        margin-top: 0px;
+        background-color: rgba(0, 0, 0, 0.41);
+    }
+    .buttonMenu
+    {
+        color: rgb(152, 157, 159);
+        margin-top: 20px;
+        height: 40px;
+        margin-left: 20px;
+        margin-right: 50px;
+
+        text-align: left;
+		font-size: 30px;
+	    background-color: rgba(0, 0, 0, 0.41);
+		
+        font-family: "HomeVideo" ;
+    }
+
+        .articleText
+    {
+        text-align: left;
+		font-size: 30px;
+	
+		padding-left: 20px;
+        padding-right: 30px;
+        font-family: "HomeVideo" ;
+        color: rgba(240, 248, 255, 0.619);
+        margin-top: 0px;
+    }
