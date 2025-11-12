@@ -67,7 +67,11 @@
 							<p class="logofont"
 			><span style="color: chocolate;">M</span>-LIB</p>
 			<p class="logofont1">ARTICLE STORAGE </p>
+				<?php
+			$x = time()
+			?>
 			</div>	
+		
 		</div>
 		
 		<div style="
@@ -93,6 +97,7 @@
 		"> </div>
 
 		
+
 		<form action="index.html" class="buttonToolBar">
 		<button  class="buttonToolBar" style="
 		height: 40px;
@@ -120,8 +125,6 @@
 		<div id="two" style="
 		margin: auto;
 		display: flex;
-		flex-direction: row;
-		
 		background-color: rgb(104, 101, 101);
 		/**/
 		background-image: url(static/fractal.jpg);
@@ -134,84 +137,50 @@
 
 
 		">
-
+			
 
 			<div style="
-			
 			display: flex;
 			flex-direction: column;
-			align-items: flex-start;
 			
 			
-			margin: 2%;
-			margin-left: 4%;
-			background-color: rgba(67, 67, 67, 0.52);
-			backdrop-filter: blur(15px);
-			
-			
-			align-self: flex-start;
-			padding-bottom: 300px;
-			
-			
-			width: 600px;
-			">
-				<div style="
-				background-color: rgb(152, 157, 159);
-				height: 40px;
-				width: 100%;
-				">
-				<p class= "Title_2">articles</p>	
-			</div>
-
-			
-									
-
-
-			<script>
-				fetch('static/articles/articlelist.html')
-				.then(response => response.text())
-				.then(html => document.getElementById('content').innerHTML = html);
-			</script>
-
-			<div id="content" class="articleText" style="margin-top: 30px; margin-right: 0px;"></div>
-
-			<script>
-				
-			</script>
-				
-			</div>
-
-						<div style="
-			position: sticky;
-			
-			top: 40%;
-			
-			
-			display: flex;
-			flex-direction: column;
 			flex-grow: 1;
 			margin: 2%;
 			background-color: rgba(67, 67, 67, 0.52);
 			backdrop-filter: blur(15px);
-			align-self: flex-start;
-
-			width: 300px;
+			
+			
+			max-height: 400px;
+			height: auto;
+			
+			max-width: 900px;
+			margin-left: auto;
+			margin-right: auto;
 			">
-
-				
 				<div style="
+				
 				background-color: rgb(152, 157, 159);
 				height: 40px;
 				width: 100%;
 				">
-				<p class= "Title_2">description</p>		
-			</div >
-				<p id="description" class="articleText" style="margin-top: 30px;">Select any file...</p>
-		
-			</div>	
+				<p class= "Title_2">Welcome</p>	
+				
+			</div>
+														
+			<script>
+				fetch('static/articles/welcome.html')
+				.then(response => response.text())
+				.then(html => document.getElementById('content').innerHTML = html);
+			</script>
+			<div id="content" style="margin-top: 30px;"></div>
+
+			</div>
+
+
+
+			
 		</div>
 
-		
 		<div style="
 		display: flex;
 		background-color: rgb(152, 157, 159);
