@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body style="display: box;
+			flex-direction: column;">
+
+    <link rel="stylesheet" href="../style/style.css">
+
+    
+
+    <a id="t1" href="article.html" class="articleTextlist" 
+    onclick="
+    sessionStorage.setItem('article','article_1.html');
+    sessionStorage.setItem('name','Машинерия шизоанализа');"
+
+    onmouseover="document.getElementById('description').innerHTML = 
+    'Небольшая статья на тему терминологии шизоанализа, попытка понять' +
+    ' весь этот жуткий постструктурализм...'"
+    onmouseleave="document.getElementById('description').innerHTML ='Select any file...'
+    "
+    >
+        1. Машинерия шизоанализа </a><br>
+
+    <!-- ======================================================= -->
+
+    <a id="t2" href="article.html" class="articleTextlist"
+    onclick="
+    sessionStorage.setItem('article','welcome.html');
+    sessionStorage.setItem('name','Машинерия шизоанализа');"
+
+    onmouseover="document.getElementById('description').innerHTML = 
+    'Анализ продукта работы блока внимания и его последующая обработка' +
+    ' полносвязной нейронной сетью в режимах инференса и обучения'"
+    onmouseleave="document.getElementById('description').innerHTML ='Select any file...'
+    "
+    >
+        2. Связь между Self-Attention и FFN</a><br>
+
+    <!-- ======================================================= -->
+
+
+    </body>
+
+
+</html>
