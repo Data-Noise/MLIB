@@ -77,7 +77,9 @@
         font-family: "HomeVideo" ;
         color: chocolate;
         margin-top: 0px;
-        background-color: rgba(0, 0, 0, 0.41);
+        background-color: rgba(0, 0, 0, 0.5);
+       
+       
     }
     .buttonMenu
     {
@@ -93,6 +95,25 @@
 		
         font-family: "HomeVideo" ;
     }
+
+
+    .mytext{
+
+        text-align: left;
+		font-size: 15px;
+	
+		padding-left: 20px;
+        padding-right: 50px;
+        font-family: "DigitalPixel" ;
+        color: rgba(240, 248, 255, 0.619);
+        margin-top: 0px;
+        text-decoration: none;
+    }
+    
+       
+    
+
+
 
         .articleText
     {
@@ -132,19 +153,28 @@
         color: rgba(240, 248, 255, 0.619);
         margin-top: 0px;
         text-decoration: none;
+    }
+    .hl
+    {
+        color: chocolate;
+    }
+    
+    .panel
+    {
+        background-color: rgba(0, 0, 0, 0.259); 
+		width: 97%;
+		margin-left: auto;
+		margin-right:auto;
+		margin-top: 2%;
+		
+        margin-bottom: 5%;
 
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+
+        border-style:solid;
+        border-width: 2px;
+        border-color: rgba(240, 255, 255, 0.333);
+  
     }
 
-
-    .button-basic:hover {
-background-color: #2980b9; /* Темнее при наведении */
-}
-
-.button-basic:active {
-transform: translateY(2px); /* Эффект нажатия */
-}
-
-.button-basic:focus {
-outline: 2px solid #74b9ff; /* Подсветка при фокусе, важно для доступности */
-outline-offset: 2px;
-}
