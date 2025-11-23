@@ -162,15 +162,13 @@
     .panel
     {
         background-color: rgba(0, 0, 0, 0.259); 
-		width: 97%;
-		margin-left: auto;
-		margin-right:auto;
-		margin-top: 2%;
 		
-        margin-bottom: 5%;
+		margin-left: 20px;
+		margin-right: 20px;
+		margin-top: 20px;
+		
+        margin-bottom: 20px;
 
-        border-bottom-right-radius: 0px;
-        border-bottom-left-radius: 0px;
 
         border-style:solid;
         border-width: 2px;
@@ -178,3 +176,31 @@
   
     }
 
+    .panelDes
+    {
+        background-color: rgba(0, 0, 0, 0.259); 
+		
+		margin-left: 20px;
+		margin-right: 20px;
+		margin-top: 2%;
+        margin-bottom: 10px;
+        border-style:solid;
+        border-width: 2px;
+        border-color: rgba(240, 255, 255, 0.333);
+    }
+
+        .panelArt
+    {
+        background-color: rgba(0, 0, 0, 0.259); 
+		align-self: center;
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-top: 2%;
+        margin-bottom: 20px;
+        width: 93%;
+        height: 100%;
+
+        border-style:solid;
+        border-width: 2px;
+        border-color: rgba(240, 255, 255, 0.333);
+    }
