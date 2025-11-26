@@ -18,8 +18,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="static/style/augmented-ui.min.css">
-	<link rel="stylesheet"  href="static/style/style.css">
-	
+	<link rel="stylesheet" href="static/style/style.css">
 
 </head>
 <body style="
@@ -63,17 +62,16 @@
 		margin-left: auto;
 		margin-right: auto;
 		background-color: rgba(67, 67, 67, 0.52);
-		backdrop-filter: blur(0px);
+	
 		">
 
 							<p class="logofont"
 			><span style="color: chocolate;">M</span>-LIB</p>
 			<p class="logofont1">ARTICLE STORAGE </p>
 			</div>	
-		
 		</div>
 		
-		<div id="toolbar" class="bar" style="
+		<div class="bar" id="toolbar" style="
 		display: flex;
 		background-color: rgb(152, 157, 159);
 		height: 50px;
@@ -83,27 +81,20 @@
 		margin-top: 0%;
 		margin-bottom: 0%;
 		">
-			<div style="width: 15px; background-color: rgb(104, 101, 101);
-			margin-left: 5px;
-			margin-right: 5px;
-			height: 90%;
-			margin-top: auto;
-			margin-bottom: auto;
-			"> </div>
 
-		
 				<script>
 					let path = 'static/items/toolbar.html';
 					fetch(path)
 					.then(response => response.text())
 					.then(html => document.getElementById('toolbar').innerHTML = html);
 				</script>
-
 	</div>
 		
 		<div id="two" style="
 		margin: auto;
 		display: flex;
+		flex-direction: row;
+		
 		background-color: rgb(104, 101, 101);
 		/**/
 		background-image: url(static/fractal.jpg);
@@ -112,65 +103,104 @@
 		background-attachment: fixed;
 		min-height: 800px;
 		height: auto;
-		
 		width: 95%;
 
 
 		">
-			
+
 
 			<div style="
+			
 			display: flex;
 			flex-direction: column;
 			
-			
-			flex-grow: 1;
 			margin: 2%;
-			background-color: rgb(67, 67, 67, 0.9);
+			margin-left: 4%;
+			background-color: rgba(67, 67, 67, 0.9);
+
+			height: 500px;
 			
-			
-			max-height: 400px;
-			height: auto;
-			
-			max-width: 900px;
-			margin-left: auto;
-			margin-right: auto;
+			width: 650px;
 			">
-				
 				<div style="
-				
 				background-color: rgb(152, 157, 159);
 				height: 40px;
 				width: 100%;
 				">
-				<p class= "Title_2">Welcome</p>	
-				
+				<p class= "Title_2">articles</p>	
 			</div>
-			<div  class="panel"
-  				data-augmented-ui=" br-clip both"
-				style="			 
-					margin-left: 20px;
-					margin-right: 20px;
-					margin-top: 20px;	
-					margin-bottom: 20px; 
-					"
-			>
-				
-				<script>
-					fetch('static/articles/welcome.html')
-					.then(response => response.text())
-					.then(html => document.getElementById('content').innerHTML = html);
-				</script>
-			
-			<div id="content" style="margin-top: 30px;"></div>
-			</div>
-			</div>
-
-
 
 			
+									
+
+<div class="panelArt" data-augmented-ui=" br-clip both">		
+			<script>
+				fetch('static/articles/articlelist.html')
+				.then(response => response.text())
+				.then(html => document.getElementById('content').innerHTML = html);
+			</script>
+
+			<div id="content" class="articleText" style="margin-top: 30px; margin-right: 0px;"></div>
+</div>
+			
+				
+			
+				
+			</div>
+
+			<div id="bord" style="
+			display: flex;
+			
+			width: 500px;
+			
+			margin-top: 2%;
+			
+			height: 500px;
+			">
+
+						<div style="
+			position: sticky;
+			
+			top: 40%;
+			
+			
+			display: flex;
+			flex-direction: column;
+			flex-grow: 1;
+			margin: 2%;
+			margin-bottom: 0%;
+			background-color: rgba(67, 67, 67, 0.9);
+			
+			align-self: flex-start;
+
+			width: 300px;
+			">
+
+				
+				<div style="
+				background-color: rgb(152, 157, 159);
+				height: 40px;
+				width: 100%;
+				">
+
+				<p class= "Title_2">description</p>		
+			</div >
+			<div class="panelDes" data-augmented-ui="bl-clip br-clip both">
+				<p id="description" class="articleText" style="margin-top: 30px; font-size: 14px; ">Select any file...</p>
+		</div>
+				<p id="date" class="articleText" style="margin-top: 0px; 
+				margin-left: 15px;
+				font-size: 13px;
+				text-align:start;
+				color: rgba(240, 248, 255, 0.4);
+				
+				">///date [???]</p>
+			</div>	
 		</div>
 
+
+		</div>
+		
 		<div class="bar" style="
 		display: flex;
 		background-color: rgb(152, 157, 159);

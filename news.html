@@ -18,8 +18,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="static/style/augmented-ui.min.css">
-	<link rel="stylesheet"  href="static/style/style.css">
-	
+	<link rel="stylesheet" href="static/style/style.css">
 
 </head>
 <body style="
@@ -63,14 +62,13 @@
 		margin-left: auto;
 		margin-right: auto;
 		background-color: rgba(67, 67, 67, 0.52);
-		backdrop-filter: blur(0px);
+
 		">
 
 							<p class="logofont"
 			><span style="color: chocolate;">M</span>-LIB</p>
 			<p class="logofont1">ARTICLE STORAGE </p>
 			</div>	
-		
 		</div>
 		
 		<div id="toolbar" class="bar" style="
@@ -83,21 +81,12 @@
 		margin-top: 0%;
 		margin-bottom: 0%;
 		">
-			<div style="width: 15px; background-color: rgb(104, 101, 101);
-			margin-left: 5px;
-			margin-right: 5px;
-			height: 90%;
-			margin-top: auto;
-			margin-bottom: auto;
-			"> </div>
-
-		
-				<script>
-					let path = 'static/items/toolbar.html';
-					fetch(path)
-					.then(response => response.text())
-					.then(html => document.getElementById('toolbar').innerHTML = html);
-				</script>
+			<script>
+				let path1 = 'static/items/toolbar.html';
+				fetch(path1)
+				.then(response => response.text())
+				.then(html => document.getElementById('toolbar').innerHTML = html);
+			</script>
 
 	</div>
 		
@@ -110,62 +99,93 @@
 		background-position-x: center;
 		background-size: 1420px 2100px;
 		background-attachment: fixed;
-		min-height: 800px;
 		height: auto;
-		
+		min-height: 800px;
 		width: 95%;
+		
+		
 
 
 		">
-			
+
 
 			<div style="
 			display: flex;
 			flex-direction: column;
 			
 			
-			flex-grow: 1;
 			margin: 2%;
+			margin-left: auto;
+			margin-right: auto;
 			background-color: rgb(67, 67, 67, 0.9);
 			
 			
-			max-height: 400px;
+			min-height: 600px;
 			height: auto;
-			
-			max-width: 900px;
-			margin-left: auto;
-			margin-right: auto;
+			width: 800px;
 			">
-				
 				<div style="
-				
 				background-color: rgb(152, 157, 159);
 				height: 40px;
 				width: 100%;
 				">
-				<p class= "Title_2">Welcome</p>	
+				<p class= "Title_2">News</p>	
+
+
+	
 				
-			</div>
-			<div  class="panel"
-  				data-augmented-ui=" br-clip both"
-				style="			 
-					margin-left: 20px;
-					margin-right: 20px;
-					margin-top: 20px;	
-					margin-bottom: 20px; 
-					"
-			>
-				
-				<script>
-					fetch('static/articles/welcome.html')
-					.then(response => response.text())
-					.then(html => document.getElementById('content').innerHTML = html);
-				</script>
-			
-			<div id="content" style="margin-top: 30px;"></div>
-			</div>
 			</div>
 
+
+
+								<div class="panel" data-augmented-ui="tl-clip br-clip both"
+				>
+
+					<p class="Title_2" style="
+					background-color: rgba(188, 188, 188, 0.488);
+					color: black;
+					padding-top: 5px;
+					padding-bottom: 5px;
+					font-size: 28px;
+					text-align: end;
+					">
+						/// [26.11.2025]</p>
+					<div>
+					<p class="articleText">
+						Статья о шизоанализе была расширена, но всё ещё не завершена.<br>
+						Стоит задуматься о реализации в коде понятия перелистывания страниц<br>
+					</p>	
+					</div>			
+				</div>
+
+
+
+
+
+				<div class="panel" data-augmented-ui="tl-clip br-clip both"
+				>
+
+					<p class="Title_2" style="
+					background-color: rgba(188, 188, 188, 0.488);
+					color: black;
+					padding-top: 5px;
+					padding-bottom: 5px;
+					font-size: 28px;
+					text-align: end;
+					">
+						/// [25.11.2025]</p>
+					<div>
+					<p class="articleText">
+						Современный css и html крайне неудобны когда требуются острые углы в дизайне.
+						К счастью, существуют готовые решения.<br> 
+						Библиотека augmented-ui оказалась на удивление удобной и функциональной.
+						И этот блок результат её работы.<br>
+					</p>	
+					</div>			
+				</div>
+		
+
+			</div>
 
 
 			
