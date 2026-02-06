@@ -1,0 +1,239 @@
+
+@import url(augmented-ui.css);
+
+@font-face{
+    font-family: 'HomeVideo';
+    src: local("HomeVideo"),
+    url('fonts/HomeVideo-Regular.otf') format("woff"),
+    url('fonts/HomeVideo-Regular.otf') format("woff2");
+	}
+
+    @font-face{
+    font-family: 'HomeVideoBold';
+    src: local("HomeVideoBold"),
+    url('fonts/HomeVideo-Bold.otf') format("woff"),
+    url('fonts/HomeVideo-Bold.otf') format("woff2");
+	}
+
+
+    @font-face{
+    font-family: 'DigitalPixel';
+    src: local("DigitalPixel"),
+    url('fonts/DigitalPixelV124-Regular.otf') format("woff"),
+    url('fonts/DigitalPixelV124-Regular.otf') format("woff2");
+	}
+
+
+    .buttonToolBar
+    {
+        
+        font-family: "HomeVideo" ;
+        font-size: 20px;
+        background-color: rgba(240, 255, 255, 0);
+        margin-left: 3px;
+        border-color: rgb(0, 0, 0);
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+ 
+    .buttonToolBar :hover
+    {
+        background-color: chocolate;
+        font-family: "HomeVideo" ;
+        font-size: 20px;
+        
+        margin-left: 3px;
+        border-color: rgb(0, 0, 0);
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+
+    .logofont{
+        text-align: left;
+		font-size: 65px;
+		padding: 12px;
+        padding-bottom: 0px;
+		padding-left: 20px;
+        font-family: "HomeVideo" ;
+        color: aliceblue;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+    .logofont1
+    {
+        text-align: left;
+		font-size: 35px;
+	
+		padding-left: 20px;
+        font-family: "HomeVideo" ;
+        color: rgba(240, 248, 255, 0.619);
+        margin-top: 0px;
+    }
+    .Title_2
+    {
+        text-align: left;
+		font-size: 35px;
+	
+		padding-left: 20px;
+        font-family: "HomeVideo" ;
+        color: chocolate;
+        margin-top: 0px;
+        background-color: rgba(0, 0, 0, 0.5);
+       
+       
+    }
+    .buttonMenu
+    {
+        color: rgb(152, 157, 159);
+        margin-top: 20px;
+        height: 40px;
+        margin-left: 20px;
+        margin-right: 50px;
+
+        text-align: left;
+		font-size: 30px;
+	    background-color: rgba(0, 0, 0, 0.41);
+		
+        font-family: "HomeVideo" ;
+    }
+
+
+    .mytext{
+
+        text-align: left;
+		font-size: 15px;
+	
+		padding-left: 20px;
+        padding-right: 50px;
+        font-family: "DigitalPixel" ;
+        color: rgba(240, 248, 255, 0.619);
+        margin-top: 0px;
+        text-decoration: none;
+    }
+    
+       
+    
+
+
+
+        .articleText
+    {
+        text-align: left;
+		font-size: 15px;
+	
+		padding-left: 20px;
+        padding-right: 50px;
+        font-family: "DigitalPixel" ;
+        color: rgba(240, 248, 255, 0.619);
+        margin-top: 0px;
+        text-decoration: none;
+
+    }
+
+    .articleTextlist
+    {
+        text-align: left;
+		font-size: 15px;
+		padding-left: 10px;
+        padding-right: 0px;
+        font-family: "DigitalPixel" ;
+        color: rgba(240, 248, 255, 0.619);
+        margin-top: 0px;
+        text-decoration: none;
+    }
+
+
+        .articleText :hover
+    {
+        text-align: left;
+		font-size: 15px;
+        background-color: chocolate;
+		padding-left: 20px;
+        padding-right: 0px;
+        font-family: "DigitalPixel" ;
+        color: rgba(240, 248, 255, 0.619);
+        margin-top: 0px;
+        text-decoration: none;
+    }
+    .hl
+    {
+        color: chocolate;
+    }
+    
+
+    .panelDes
+    {
+       
+		
+		margin-left: 20px;
+		margin-right: 20px;
+		margin-top: 2%;
+        margin-bottom: 10px;
+
+        --aug-border-bg: rgba(240, 255, 255, 0.333);
+        --aug-br: 40px;
+        --aug-border-all: 2px;
+        
+     
+        
+        --aug-inlay-bg: rgba(0, 0, 0, 0); 
+        background-color: rgba(0, 0, 0, 0.259); 
+    }
+
+        .panelArt
+    {
+        /*
+        background-color: rgba(0, 0, 0, 0.259); 
+        */
+        
+		align-self: center;
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-top: 2%;
+        margin-bottom: 20px;
+        width: 93%;
+        height: 100%;
+
+                --aug-border-bg: rgba(240, 255, 255, 0.333);
+        --aug-br: 80px;
+        --aug-border-all: 2px;
+        
+        --aug-br: 25px;
+        --aug-br-inset1: 40%;
+        
+        --aug-inlay-bg: rgba(0, 0, 0, 0); 
+        background-color: rgba(0, 0, 0, 0.259); 
+    }
+    .bar
+    {
+        border: 2px;
+        border-style: solid;
+		border-color: rgb(45, 45, 45);
+        border-left: none;
+        border-right: none;
+    }
+
+    .panel
+    { 
+
+        margin-left: 20px;
+		margin-right: 20px;
+		margin-top: 20px;	
+		margin-bottom: 20px; 
+
+        --aug-border-bg: rgba(240, 255, 255, 0.333);
+        --aug-br: 80px;
+        --aug-border-all: 2px;
+
+        --aug-tl: 20px;
+        
+        
+        --aug-br: 25px;
+        --aug-br-inset1: 40%;
+        
+        --aug-inlay-bg: rgba(0, 0, 0, 0); 
+        background-color: rgba(0, 0, 0, 0.259); 
+
+    }

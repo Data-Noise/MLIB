@@ -1,0 +1,35 @@
+@font-face{
+font-family: 'HomeVideo';
+src: local("HomeVideo"),
+url('fonts/HomeVideo-Regular.otf') format("woff"),
+url('fonts/HomeVideo-Regular.otf') format("woff2");
+}
+
+@font-face{
+font-family: 'HomeVideoBold';
+src: local("HomeVideoBold"),
+url('fonts/HomeVideo-Bold.otf') format("woff"),
+url('fonts/HomeVideo-Bold.otf') format("woff2");
+}
+
+
+@font-face{
+font-family: 'DigitalPixel';
+src: local("DigitalPixel"),
+url('fonts/DigitalPixelV124-Regular.otf') format("woff"),
+url('fonts/DigitalPixelV124-Regular.otf') format("woff2");
+}
+
+p
+{
+        text-align: left;
+		font-size: 15px;
+		padding-left: 20px;
+        padding-right: 50px;
+        padding-top: 0px;
+        font-family: "DigitalPixel" ;
+        color: rgba(240, 248, 255, 0.619);
+        margin-top: 0px;
+        text-decoration: none;
+
+}
