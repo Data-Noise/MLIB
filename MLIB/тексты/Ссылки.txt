@@ -1,6 +1,0 @@
-https://transformer-circuits.pub/2021/framework/index.html -- важно
-https://arxiv.org/pdf/1906.02715
-https://arxiv.org/pdf/1512.03385
-https://arxiv.org/pdf/1909.01066
-https://arxiv.org/pdf/2405.15071#page=14&zoom=100,144,285
-https://arxiv.org/pdf/2405.15071
