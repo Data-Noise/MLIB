@@ -235,5 +235,27 @@
         
         --aug-inlay-bg: rgba(0, 0, 0, 0); 
         background-color: rgba(0, 0, 0, 0.259); 
+    }
+        .block
+    { 
 
+        margin-left: 20px;
+		margin-right: 20px;
+		margin-top: 20px;	
+		margin-bottom: 20px; 
+
+        --aug-border-bg: rgba(240, 255, 255, 0.333);
+        --aug-br: 80px;
+        --aug-border-all: 2px;
+
+        --aug-tl: 0px;
+        
+               /*
+         --aug-br: 25px;
+        --aug-br-inset1: 40%;
+        */
+         --aug-bl: 900px;
+        
+        --aug-inlay-bg: rgba(0, 0, 0, 0); 
+        background-color: rgba(0, 0, 0, 0.259); 
     }
