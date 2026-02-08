@@ -1,43 +1,73 @@
+		<!DOCTYPE html>
+		<body>
 		<div style="width: 15px; background-color: rgb(104, 101, 101);
 		margin-left: 5px;
 		margin-right: 5px;
 		height: 40px;
 		margin-top: auto;
 		margin-bottom: auto;
-		"> </div>
-		
-		<form action="/MLIB/index.html" class="buttonToolBar">
-		<button  class="buttonToolBar" style="
-		height: 40px;
-		">
+		" id="test"> x</div>
+
+		<audio id="myAudio" src="/MLIB/static/sounds/click.wav"
+		preload="auto" volume="0.7"></audio>
+		<form action="/MLIB/index.html" class="buttonToolBar"
+			
+		>
+		<button class="buttonToolBar" style="height: 40px;"
+			onclick="sessionStorage.setItem('click', 1)"
+		>
 			About
 		</button></form>
 		
         <form action="/MLIB/news.html" class="buttonToolBar">
 		<button class="buttonToolBar" style="
 		height: 40px;
-		">
+		"
+			onclick="sessionStorage.setItem('click', 1)"
+		>
 			News
 		</button></form>
 
 		<form action="/MLIB/download.html" class="buttonToolBar">
 		<button class="buttonToolBar" style="
 		height: 40px;
-		">
+		"
+			onclick="sessionStorage.setItem('click', 1)"
+		>
 			Video
 		</button></form>
 
 		<form action="/MLIB/article_list.html" class="buttonToolBar">
 		<button class="buttonToolBar" style="
 		height: 40px;
-		">
+		"
+			onclick="sessionStorage.setItem('click', 1)"
+		>
 			Articles
 		</button></form>
 
 		<form  class="buttonToolBar">
 		<button class="buttonToolBar" style="
 		height: 40px;
-		">
+		"
+		onclick="sessionStorage.setItem('click', 1)"
+		>
 			L-WORM
 		</button></form>
 
+		
+		</body>
+		<script>
+			var click = sessionStorage.getItem('click');
+			if(click >=1)
+			{
+				document.getElementById('myAudio').play();
+			}
+			
+			
+			//sessionStorage.getItem('click').replace('click', 0)
+		    sessionStorage.setItem('click', 0);
+			
+
+		</script>
+		</html>
