@@ -1,0 +1,17 @@
+/* Базовый размер для мобильных 
+body {
+    font-size: 14px;
+}
+
+h1 {
+    
+}*/
+
+
+
+/* Для планшетов */
+    @media screen and (max-width: 600px) {
+    .mytext {
+        font-size: 20px
+    }
+}
