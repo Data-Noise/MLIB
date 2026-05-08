@@ -209,16 +209,12 @@
 			">
 			
 
-			<div class="block" data-augmented-ui="tl-clip br-clip both" style=" 
+			<div id="blockForBlock" class="block" data-augmented-ui="tl-clip br-clip both" style=" 
 			height: 80%;
 			background-color:rgba(139, 0, 0, 0.531)"
-			--aug-tl: 40px;
-			>												
-			
-			
-			
-			<p id="content" class="logofont1" style="margin-top: 30px; margin-bottom: 5px; font-size: 70px;">is block</p>
-			<p id="content" class="logofont1" style="margin-top: 5px; font-size: 40px;">
+			--aug-tl: 40px;>
+			<p id="content_block" class="logofont1" style="margin-top: 30px; margin-bottom: 5px; font-size: 70px;">is block</p>
+			<p id="content_key" class="logofont1" style="margin-top: 5px; font-size: 40px;">
 			A key is required to view	
 			</p>
 			<div style=" background-image: url(static/style/block.png); background-position-x: center;
@@ -242,81 +238,40 @@
 				<input type="text" id="num2" style="width: 30px;
 				height: 30px; background-color: rgba(240, 255, 255, 0.494);
 				font-size: large;
-				color: rgb(0, 0, 0);;margin-left: 5px;">
+				color: rgb(0, 0, 0);margin-left: 5px;">
 				<button onclick="validateAndRedirect();" style= "width: 80px; 
-				height: 30px; font-size: large; margin-left: 5px; background-color: rgb(50, 165, 42);">ENTER</button>
+				height: 30px; font-size: large; margin-left: 5px; background-color: rgb(50, 165, 42); ">ENTER</button>
 				
 				<script>
-						function redirectToSite() {
-							const targetUrl = "/MLIB/CyberGothic.html";
-							window.location.href = targetUrl;
-						}
-						
-						// Функция для отображения сообщений
-						function showMessage(text, type) {
-							const messageDiv = document.getElementById('message');
-							messageDiv.textContent = text;
-							messageDiv.className = `message ${type}`;
+						function validateAndRedirect()
+						{
+							//console.log("hello from function!");
+							let textbox1 = document.getElementById("num1");
+							let textbox2 = document.getElementById("num2");
 							
-							// Скрыть сообщение через 3 секунды (опционально)
-							setTimeout(() => {
-								messageDiv.className = 'message';
-							}, 3000);
-						}
-						
-						// Функция проверки чисел и перенаправления
-						function validateAndRedirect() {
-							// Получаем значения из textbox'ов
-							const input1 = document.getElementById('num1').value;
-							const input2 = document.getElementById('num2').value;
-							console.log(input1);
-							console.log(input2);
-							// Очищаем предыдущие сообщения
-							const messageDiv = document.getElementById('message');
-							messageDiv.className = 'message';
-							
-							// Проверка на пустые поля
-							if (input1 === "" || input2 === "") {
-								showMessage("Ошибка: Пожалуйста, заполните оба поля!", "error");
-								return;
+							let pass = String(textbox1.value);
+							let word = String(textbox2.value);
+							//console.log(pass);
+							//console.log(typeof(pass));
+
+							if(pass == "1925" &&  word == "01" )
+							{
+								document.getElementById("blockForBlock").style.backgroundColor = "rgba(50, 165, 42, 0.5)" ;
+								document.getElementById("content_block").innerText = "it is open";
+								
+								document.getElementById("content_key").innerText = "rediction...";
+
+
+								setInterval(() => {
+								window.location.href = '/MLIB/wormsPage.html';
+								},600);
 							}
-							
-							// Преобразуем в числа
-							const num1 = Number(input1);
-							const num2 = Number(input2);
-							
-							// Проверка, являются ли введенные значения числами
-							if (isNaN(num1) || isNaN(num2)) {
-								showMessage("Ошибка: Пожалуйста, введите корректные числа!", "error");
-								return;
-							}
-							
-							// ===== ЗДЕСЬ ВАША ЛОГИКА ПРОВЕРКИ =====
-							// Примеры условий проверки (измените под свои нужды):
-							
-							// Пример 1: Проверка, что оба числа положительные
-							if (num1 > 0 && num2 > 0) {
-								showMessage("Успех! Оба числа положительные. Перенаправление...", "success");
-								setTimeout(() => {
-									redirectToSite();
-								}, 1000); // Задержка 1 секунда перед редиректом
-							}
-							else {
-								showMessage("Ошибка проверки: Числа не соответствуют критериям!", "error");
+							else
+							{
+								console.log("not true");
 							}
 						}
-						
-						// Дополнительно: обработка нажатия клавиши Enter
-						function handleKeyPress(event) {
-							if (event.key === 'Enter') {
-								validateAndRedirect();
-							}
-						}
-						
-						// Добавляем обработчик нажатия клавиш для полей ввода
-						document.getElementById('num1').addEventListener('keypress', handleKeyPress);
-						document.getElementById('num2').addEventListener('keypress', handleKeyPress);
-					</script>
+				</script>
 			</div>
 			
 		</div>	
