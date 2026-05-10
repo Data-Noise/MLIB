@@ -48,7 +48,9 @@
     }
 
     .decoration{visibility: hidden; display: none;}
-    .content{padding-bottom: 40px; margin-top: 50px;}
+    .content{padding-bottom: 40px; margin-top: 50px;
+     max-width: 100%;  /* Не шире родителя */
+        max-height: 100%; /* Не выше родителя */}
     .decorationForBar{flex:1;}
 
     #but1
@@ -100,6 +102,7 @@
     .but5text{display: none; visibility: hidden;} 
     #articleName{font-size: 25px;}/* исправить*/
 
+    .imageforstate{display: none; visibility: hidden;}
 }
 
 @media screen and (min-width: 600px)

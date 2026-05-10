@@ -37,14 +37,16 @@ p
 
 @media screen and (max-width: 600px) {
     p {
-        display:auto;
+        display: inline-block;
         font-size: 15px;
         padding-right: 0px;
-        padding-left: 10px;
+        padding-left: 0px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
     #content
     {
-        width: 394px;
+        width: auto;
     }
 
 }
