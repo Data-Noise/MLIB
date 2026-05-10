@@ -34,8 +34,17 @@ p
 
 }
 
+
 @media screen and (max-width: 600px) {
     p {
-        font-size: 27px;
+        display:auto;
+        font-size: 15px;
+        padding-right: 0px;
+        padding-left: 10px;
     }
+    #content
+    {
+        width: 394px;
+    }
+
 }

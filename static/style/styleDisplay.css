@@ -46,11 +46,11 @@
         margin-top: 0px;
         text-decoration: none;
     }
+
     .decoration{visibility: hidden; display: none;}
     .content{padding-bottom: 40px; margin-top: 50px;}
     .decorationForBar{flex:1;}
 
-    .buttonToolBar{}
     #but1
     {
        
@@ -61,6 +61,8 @@
         height: 60px;
     }
     .but1text{display: none; visibility: hidden;}  
+
+    .panel{margin-bottom: 20px;margin-top: 5px;}
      
         
     #but2{
@@ -96,6 +98,8 @@
     width: 40px;
     }
     .but5text{display: none; visibility: hidden;} 
+    #articleName{font-size: 25px;}/* исправить*/
+
 }
 
 @media screen and (min-width: 600px)
