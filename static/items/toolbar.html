@@ -1,11 +1,18 @@
-		<!DOCTYPE html>
-		<body>
+	
+		
+<div style="display: flex;
+flex-wrap: wrap; 
+">
+
 		<div style="width: 15px; background-color: rgb(104, 101, 101);
+		display: flex;
+		 
 		margin-left: 5px;
 		margin-right: 5px;
 		height: 40px;
 		margin-top: auto;
 		margin-bottom: auto;
+		flex:1;
 		" id="test"></div>
 
 		<audio id="myAudio" src="/MLIB/static/sounds/click.wav"
@@ -13,50 +20,64 @@
 		<form action="/MLIB/index.html" class="buttonToolBar"
 			
 		>
-		<button class="buttonToolBar" style="height: 40px;"
+		<button id="but1" class="buttonToolBar" style="height: 40px;"
 			onclick="sessionStorage.setItem('click', 1)"
 		>
-			About
+		<div class="but1text" >About</div>
+			
 		</button></form>
 		
         <form action="/MLIB/news.html" class="buttonToolBar">
-		<button class="buttonToolBar" style="
+		<button id="but2" class="buttonToolBar" style="
 		height: 40px;
 		"
 			onclick="sessionStorage.setItem('click', 1)"
 		>
-			News
+		<div class="but2text">News</div>
+			
 		</button></form>
 
 		<form action="/MLIB/download.html" class="buttonToolBar">
-		<button class="buttonToolBar" style="
+		<button id="but3" class="buttonToolBar" style="
 		height: 40px;
 		"
 			onclick="sessionStorage.setItem('click', 1)"
 		>
-			Video
+		<div class="but3text">Video</div>
+			
 		</button></form>
 
 		<form action="/MLIB/article_list.html" class="buttonToolBar">
-		<button class="buttonToolBar" style="
+		<button id="but4" class="buttonToolBar" style="
 		height: 40px;
 		"
 			onclick="sessionStorage.setItem('click', 1)"
 		>
-			Articles
+		<div class="but4text">Articles</div>
+			
 		</button></form>
 
 		<form action="/MLIB/LWORM.html" class="buttonToolBar">
-		<button class="buttonToolBar" style="
+		<button id="but5" class="buttonToolBar" style="
 		height: 40px;
 		"
 		onclick="sessionStorage.setItem('click', 1)"
 		>
-			L-WORM
+		<div class="but5text">L-WORM</div>
+			
 		</button></form>
 
-		
-		</body>
+				<div class = "decorationForBar"
+				style="width: 15px; background-color: rgb(104, 101, 101);
+		display: flex;
+		 
+		margin-left: 5px;
+		margin-right: 5px;
+		height: 40px;
+		margin-top: auto;
+		margin-bottom: auto;
+		" id="test"></div>
+
 		<script>
 			var click = sessionStorage.getItem('click');
 			if(click >=1)
@@ -70,4 +91,5 @@
 			
 
 		</script>
-		</html>
+</div>
+		
