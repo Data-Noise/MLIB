@@ -1,0 +1,124 @@
+.pageBackground
+{
+    display: flex;
+    justify-content: center;
+    /* 
+	width: 100%;
+	height: 100%;*/
+	background-color: rgb(24, 24, 24); 
+	
+}
+.pageBase
+{
+    display: inline-block;
+    background-color: rgb(51, 51, 52); 
+    height: auto; 
+    width: 90% ; 
+    text-align: center;
+    max-width: 1480px;
+}
+.texturePageBackgroundHat
+{
+    display: flexbox;
+    height: 140px; 
+    width: 95%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../fractal.jpg);
+    background-position-x: center;
+    background-size: 1420px 2100px;
+    background-attachment: fixed;
+}
+.for_TexturePageBackgroundHat
+{
+    display: flexbox;
+    height: 140px; 
+    width: 100%;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(67, 67, 67, 0.52);
+}
+.bar/*it is toolbar label*/
+{
+   
+    
+    background-color: rgb(152, 157, 159);
+    height: auto; /*50px*/
+    min-height: 50px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    
+}
+.two
+{
+    margin: auto;
+    display: flex;
+    background-color: rgb(104, 101, 101);
+    background-image: url(../fractal.jpg);
+    background-position-x: center;
+    background-size: 1420px 2100px;
+    background-attachment: fixed;
+    min-height: 800px;
+    height: auto;
+    width: 95%;
+}
+.content
+{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    margin: 2%;
+    background-color: rgb(67, 67, 67, 0.9); /*rgb(51, 51, 52);*/
+    min-height: 400px;
+    /* */
+    max-width: 900px;
+    height: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    
+}
+.contentHat
+{
+    background-color: rgb(152, 152, 159);
+    height: 40px;
+    width: auto;
+}
+.decoration
+{
+    width: 15px; 
+    background-color: rgb(104, 101, 101);
+    margin-left: 0px;
+    margin-right: 0px;
+    height: 40px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.panel
+{ 
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;	
+    margin-bottom: 20px; 
+    padding-bottom: 20px;
+    --aug-border-bg: rgba(240, 255, 255, 0.333);
+    --aug-br: 80px;
+    --aug-border-all: 2px;
+    --aug-tl: 20px;
+    --aug-br: 25px;
+    --aug-br-inset1: 40%;
+    --aug-inlay-bg: rgba(0, 0, 0, 0); 
+    background-color: rgba(0, 0, 0, 0.259); 
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}

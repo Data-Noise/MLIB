@@ -1,0 +1,111 @@
+
+/* Для смартфонов */
+@media screen and (max-width: 600px) 
+{
+    .window{ 
+        width: 100%;
+    }
+    .logofont
+    {
+        font-size: 70px;
+    }
+    .logofont1
+    {
+        font-size: 20px;
+    }
+    .texturePageBackgroundHat
+    {
+        height: 100px;
+    }
+    .pageBase
+    {
+        width: 100%;
+    }
+    .pageBackground
+    {
+        margin: 0%;
+        padding: 0%;
+        
+    }
+    .panel
+    {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;	
+        margin-bottom: 0px; 
+        padding-bottom: 30px;
+    }
+    .mytext
+    {
+        text-align: left;
+        font-size: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-family: "DigitalPixel" ;
+        color: rgba(240, 248, 255, 0.619);
+        margin-top: 0px;
+        text-decoration: none;
+    }
+
+    .decoration{visibility: hidden; display: none;}
+    .content{padding-bottom: 40px; margin-top: 50px;
+     max-width: 100%;  /* Не шире родителя */
+        max-height: 100%; /* Не выше родителя */}
+    .decorationForBar{flex:1;}
+
+    #but1
+    {
+       
+        background-image: url(/MLIB/static/style/buttons/home.png);
+        background-size:cover;      
+        image-rendering: pixelated;
+        width: 40px;
+        height: 60px;
+    }
+    .but1text{display: none; visibility: hidden;}  
+
+    .panel{margin-bottom: 20px;margin-top: 5px;}
+     
+        
+    #but2{
+        background-image: url(/MLIB/static/style/buttons/news.png);
+        background-size:cover;      
+        image-rendering: pixelated;
+        width: 40px;
+    }
+    .but2text{display: none; visibility: hidden;}  
+
+
+    #but3{
+    background-image: url(/MLIB/static/style/buttons/movie.png);
+    background-size:cover;      
+    image-rendering: pixelated;
+    width: 40px;
+    
+    }
+    .but3text{display: none; visibility: hidden;}  
+
+    #but4{
+    background-image: url(/MLIB/static/style/buttons/articles.png);
+    background-size:cover;      
+    image-rendering: pixelated;
+    width: 40px;
+    }
+    .but4text{display: none; visibility: hidden;}  
+
+    #but5{
+    background-image: url(/MLIB/static/style/buttons/Deep.png);
+    background-size:cover;      
+    image-rendering: pixelated;
+    width: 40px;
+    }
+    .but5text{display: none; visibility: hidden;} 
+    #articleName{font-size: 25px;}/* исправить*/
+
+    .imageforstate{display: none; visibility: hidden;}
+}
+
+@media screen and (min-width: 600px)
+{
+    .decorationForBar{display: none; visibility: hidden;}
+}
