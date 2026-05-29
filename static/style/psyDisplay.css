@@ -1,0 +1,14 @@
+@media screen and (max-width: 600px) {
+    .two
+    {
+          
+        background-position-y: 0px !important;
+        background-size: 500px !important;
+    }
+    .texturePageBackgroundHat
+    {
+
+         background-position-y: 0px !important;
+        background-size: 500px !important;
+    }
+}

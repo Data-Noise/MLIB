@@ -1,0 +1,307 @@
+
+@import url(augmented-ui.css);
+
+@font-face{
+    font-family: 'HomeVideo';
+    src: local("HomeVideo"),
+    url('fonts/HomeVideo-Regular.otf') format("woff"),
+    url('fonts/HomeVideo-Regular.otf') format("woff2");
+}
+
+@font-face{
+    font-family: 'HomeVideoBold';
+    src: local("HomeVideoBold"),
+    url('fonts/HomeVideo-Bold.otf') format("woff"),
+    url('fonts/HomeVideo-Bold.otf') format("woff2");
+}
+
+@font-face{
+    font-family: 'DigitalPixel';
+    src: local("DigitalPixel"),
+    url('fonts/DigitalPixelV124-Regular.otf') format("woff"),
+    url('fonts/DigitalPixelV124-Regular.otf') format("woff2");
+}
+
+.buttonToolBar
+{
+    font-family: "HomeVideo" ;
+    font-size: 20px;
+    background-color: rgba(240, 255, 255, 0);
+    margin-left: 2px;
+    margin-right: 2px;
+    border-color: rgb(0, 0, 0);
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.buttonToolBar :hover
+{
+    background-color: chocolate;
+    font-family: "HomeVideo" ;
+    font-size: 20px;
+    margin-left: 3px;
+    border-color: rgb(0, 0, 0);
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.logofont{
+    text-align: left;
+    font-size: 65px;
+    padding: 12px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    font-family: "HomeVideo" ;
+    color: aliceblue;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.logofont1
+{
+    text-align: left;
+    font-size: 35px;
+    padding-left: 20px;
+    font-family: "HomeVideo" ;
+    color: rgba(240, 248, 255, 0.619);
+    margin-top: 0px;
+}
+.Title_2
+{
+    text-align: left;
+    font-size: 35px;
+    padding-left: 20px;
+    font-family: "HomeVideo" ;
+    color: chocolate;
+    margin-top: 0px;
+    background-color: rgb(76, 78, 79);
+}
+.buttonMenu
+{
+    color: rgb(152, 157, 159);
+    margin-top: 20px;
+    height: 40px;
+    margin-left: 20px;
+    margin-right: 50px;
+    text-align: left;
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.41);
+    font-family: "HomeVideo" ;
+}
+
+.mytext
+{
+    text-align: left;
+    font-size: 15px;
+    padding-left: 20px;
+    padding-right: 50px;
+    font-family: "DigitalPixel" ;
+    color: rgba(240, 248, 255, 0.619);
+    margin-top: 0px;
+    text-decoration: none;
+}
+
+
+.articleText
+{
+    text-align: left;
+    font-size: 15px;
+    padding-left: 20px;
+    padding-right: 50px;
+    font-family: "DigitalPixel" ;
+    color: rgba(240, 248, 255, 0.619);
+    margin-top: 0px;
+    text-decoration: none;
+}
+
+.articleTextlist
+{
+    text-align: left;
+    font-size: 15px;
+    padding-left: 10px;
+    padding-right: 0px;
+    font-family: "DigitalPixel" ;
+    color: rgba(240, 248, 255, 0.619);
+    margin-top: 0px;
+    text-decoration: none;
+}
+
+.articleText :hover
+{
+    text-align: left;
+    font-size: 15px;
+    background-color: chocolate;
+    padding-left: 20px;
+    padding-right: 0px;
+    font-family: "DigitalPixel" ;
+    color: rgba(240, 248, 255, 0.619);
+    margin-top: 0px;
+    text-decoration: none;
+}
+.hl
+{
+    color: chocolate;
+}
+.panelDes
+{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 2%;
+    margin-bottom: 10px;
+    --aug-border-bg: rgba(240, 255, 255, 0.333);
+    --aug-br: 40px;
+    --aug-border-all: 2px;
+    --aug-inlay-bg: rgba(0, 0, 0, 0); 
+    background-color: rgba(0, 0, 0, 0.259); 
+}
+.panelArt
+{
+    align-self: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 2%;
+    margin-bottom: 20px;
+    width: 93%;
+    height: 100%;
+    --aug-border-bg: rgba(240, 255, 255, 0.333);
+    --aug-br: 80px;
+    --aug-border-all: 2px;
+    --aug-br: 25px;
+    --aug-br-inset1: 40%;
+    --aug-inlay-bg: rgba(0, 0, 0, 0); 
+    background-color: rgba(0, 0, 0, 0.259); 
+}
+.bar
+{
+    border: 2px;
+    border-style: solid;
+    border-color: rgb(45, 45, 45);
+    border-left: none;
+    border-right: none;
+}
+.block
+{ 
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;	
+    margin-bottom: 20px; 
+    --aug-border-bg: rgba(240, 255, 255, 0.333);
+    --aug-br: 80px;
+    --aug-border-all: 2px;
+    --aug-tl: 0px;
+    --aug-bl: 900px;
+    --aug-inlay-bg: rgba(0, 0, 0, 0); 
+    background-color: rgba(0, 0, 0, 0.259); 
+}
+
+.bot-message
+{
+    display: flex;
+    max-width: 400px;
+    font-family: "HomeVideo" ;
+    align-items: center;
+  	
+    text-align:left;
+    font-size: 20px;
+    background-color: rgba(159, 255, 114, 0.733);
+    margin: 5px;
+    height: 50px;
+    margin-left: 40px;
+    padding: 5px;
+    padding-left: 0px;
+
+
+
+}
+
+.user-message
+{
+      display: flex;
+    max-width: 400px;
+    font-family: "HomeVideo" ;
+    align-items: center;
+  	
+    text-align:left;
+    font-size: 20px;
+    background-color: rgba(255, 229, 79, 0.733);
+    margin: 5px;
+    min-height: 50px;
+    margin-left: 20px;
+    padding: 5px;
+    padding-left: 0px;
+  }
+
+
+
+
+/* Основные размеры полосы прокрутки */
+::-webkit-scrollbar {
+  width: 20px;    /* Ширина вертикальной */
+  height: 20px;   /* Высота горизонтальной */
+}
+
+/* Дорожка (трек), по которой бегает ползунок */
+::-webkit-scrollbar-track {
+  /* Текстурный фон "в клеточку" как в Win95 */
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAIAAAD91JpzAAAAFElEQVQIW2M4fPz0////GYAYyAIASnoKpV3w4kgAAAAASUVORK5CYII=');
+  image-rendering: pixelated; /* Чтобы фон не размывало */
+}
+
+/* Сам ползунок */
+::-webkit-scrollbar-thumb {
+  /* Эффект "вдавленной" кнопки (светлый верх, темная тень снизу) */
+  border-top: 1px solid #c3c7cb;
+  border-left: 1px solid #c3c7cb;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  box-shadow: inset 1px 1px 0 0 white, inset -1px -1px 0 0 #868a8e;
+  background-color: #c3c7cb;
+}
+
+/* Уголок, где пересекаются полосы */
+::-webkit-scrollbar-corner {
+  background-color: #c3c7cb;
+}
+
+/* Кнопки-стрелки (вверх/вниз, влево/вправо) */
+::-webkit-scrollbar-button {
+  border-top: 1px solid #c3c7cb;
+  border-left: 1px solid #c3c7cb;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  box-shadow: inset 1px 1px 0 0 white, inset -1px -1px 0 0 #868a8e;
+  background-color: #c3c7cb;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Стрелка ВВЕРХ */
+::-webkit-scrollbar-button:vertical:decrement {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGklEQVR4AWMYxuA/SYphmETFhDX9x4mHGQAAcL4P8dQiMq8AAAAASUVORK5CYII=');
+}
+
+/* Стрелка ВНИЗ */
+::-webkit-scrollbar-button:vertical:increment {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAAF0lEQVQY02NgoBf4jwJxSOHQhcNAOgMAWWAP8Rv2U3UAAAAASUVORK5CYII=');
+}
+
+/* Стрелка ВЛЕВО */
+::-webkit-scrollbar-button:horizontal:decrement {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAAHklEQVQY02NgoBT8xyX8H5fwf1zCpOjAYwceV1EEAAO2D/HsQ4vsAAAAAElFTkSuQmCC');
+}
+
+/* Стрелка ВПРАВО */
+::-webkit-scrollbar-button:horizontal:increment {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAAHUlEQVQY02NgIB/8xy3xH7fEf9wS/0nUQZqrKAYAK44P8ZRmzLQAAAAASUVORK5CYII=');
+}
+
+/* Анимация нажатия на кнопку */
+::-webkit-scrollbar-button:active {
+  border-top: 1px solid #868a8e;
+  border-left: 1px solid #868a8e;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  box-shadow: none;
+  background-position: 2px 2px;
+}

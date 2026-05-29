@@ -1,0 +1,95 @@
+<!-- 
+Новый шаблон, который учитывает все ошибки прошлого
+С 19.10.2025 ~20:20 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head style="margin: 0px;">
+	<title>M-LIB </title>	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="static/style/augmented-ui.min.css">
+	<link rel="stylesheet"  href="static/style/style.css">
+	<link rel="stylesheet"  href="static/style/pageDesign.css">
+	<link rel="stylesheet"  href="static/style/styleDisplay.css">
+	<link rel="stylesheet"  href="static/style/psyDisplay.css">
+</head>
+
+<body class="pageBackground" style="padding-left: auto;padding-right: auto;">
+	<div  class="pageBase" >
+		<div class="texturePageBackgroundHat" style="background-image: url(static/psy_palm.gif); image-rendering: pixelated; background-position-x: auto;  background-position-y: -1000px;">
+				<div class="for_TexturePageBackgroundHat" >
+					<p class="logofont"><span style="color: chocolate;">M</span>-LIB</p>
+					<p class="logofont1">psychological help page </p>
+				</div>	
+			</div>
+		
+		<div id="toolbar" class="bar"></div>
+				<script src="static/items/loadToolbar.js"></script>				
+	
+		
+		<div id="two" class="two" style="background-image: url(static/psy_palm.gif); image-rendering: pixelated; background-position-x: auto;  background-position-y: -1000px; flex-direction: column;
+		align-items: center;
+		">
+
+			
+			<div id="MyColumn" class="MyColumn" style="
+				
+				max-width: 500px; 
+				
+				">
+					<div class="content" style="background-color: rgba(0, 0, 0, 0.256); max-width: 500px; flex:1; max-height: 400px; padding-bottom: 0px; width: 500px;">
+						
+						<div class="contentHat" style="margin-bottom: 0px; ">
+						<p class= "Title_2">Chat</p>				
+						</div>
+
+						
+						<div class="chat" id="chat" style="display: flex;max-height: 500px;  overflow-y: auto; flex: 1;">
+							<div id="messages"></div>
+							
+						</div>			
+					
+				</div>
+
+				<div  data-augmented-ui="tl-clip br-clip " class="psyPanelDes" style="background-color: rgb(152, 152, 159); min-height: 50px; height: 100px; width: 100%; box-sizing: border-box; z-index: 0;">							
+					<div data-augmented-ui="tl-clip br-clip both" id="WindowForWritingMessage" class="WindowForWritingMessage" >
+						
+						<button data-augmented-ui="tl-clip br-clip" onclick="sendMessage()" style="
+						margin-top: 13px;
+						box-sizing: border-box;
+						height: 30px; width: 70px;
+						margin-left: 20px; font-family: 'HomeVideo'; font-size: 20px;
+						background-color: greenyellow; 
+						margin-right: 10px;
+						border: none;
+
+						">
+							Send
+						</button>
+						<input type="text" id="userInput" placeholder="Enter message..."
+						style="
+						margin-top: 13px;
+						margin-right: 10px;
+						box-sizing: border-box;
+						height: 30px; 
+						width: 100%;
+						background-color: rgb(134, 134, 134);
+						border: none;
+						font-family: 'HomeVideo'; font-size: 20px;
+						color: greenyellow;
+						"
+						>
+						
+					</div>
+				</div>
+		<script src="static/scripts/elizabot.js"></script>
+			<script src="static/scripts/eliza_start.js"></script>
+			</div>
+
+		
+		</div>
+	<div id="bottomPanel"></div>
+		<script src="static/items/loadBottomPanel.js"></script>
+</body>
+</html>

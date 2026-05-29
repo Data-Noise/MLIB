@@ -1,0 +1,65 @@
+<!-- 
+Новый шаблон, который учитывает все ошибки прошлого
+С 19.10.2025 ~20:20 
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head style="
+	margin: 0px;">
+	<!--link rel="stylesheet" href="static/style/style.css"-->
+	<script>
+		MathJax = {
+		loader: {load: ["input/asciimath", "output/chtml", "ui/menu"]},
+		output: {font: "mathjax-newcm"}}
+	</script>
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+	<title>M-LIB </title>	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../style/style.css">
+	<link rel="stylesheet"  href="../style/pageDesign.css">
+	<link rel="stylesheet"  href="../style/styleDisplay.css">
+
+</head>
+<body class="pageBackground" >
+<div class="pageBase" >
+			<div class="texturePageBackgroundHat">
+				<div class="for_TexturePageBackgroundHat">
+					<p class="logofont"><span style="color: chocolate;">M</span>-LIB</p>
+					<p class="logofont1">ARTICLE STORAGE </p>
+				</div>	
+			</div>
+		
+			<div id="toolbar" class="bar"></div>
+				<script src="../items/loadToolbar.js"></script>
+		
+	<div id="two" class="two">
+	
+
+			<div class="content">
+				<div class="contentHat">
+				<div id="articleName" class= "Title_2">Article: [name]</div>	
+			</div>
+
+			<div class="panel" data-augmented-ui="tl-clip br-clip both">	
+			<div id="content" style="margin-top: 30px;"></div>												
+				<script>
+					let path = 'a_machinery_of_schizoanalysis_text.html';
+					fetch(path)
+					.then(response => response.text())
+					.then(html => document.getElementById('content').innerHTML = html);
+					document.getElementById('articleName').innerHTML = 'Машинерия шизоанализа';
+				</script>
+
+			</div>	
+
+			</div>			
+		</div>
+
+<div id="bottomPanel"></div>
+		<script src="../items/loadBottomPanel.js"></script>
+
+</body>
+</html>
+<!--script src="./js/test.js"></script-->
