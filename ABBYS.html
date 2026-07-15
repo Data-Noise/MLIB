@@ -1,0 +1,185 @@
+<!-- 
+Новый шаблон, который учитывает все ошибки прошлого
+С 19.10.2025 ~20:20 
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+	<head style="margin: 0px;">
+		<title>M-LIB </title>	
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="static/style/augmented-ui.min.css">	
+		<link rel="stylesheet"  href="static/style/pageDesign.css">
+		<link rel="stylesheet"  href="static/style/styleDisplay.css">
+		<link rel="stylesheet"  href="static/style/style.css">
+	</head>
+
+	<body class="pageBackground" >
+		<div class="pageBase" >
+			<div id="cipher" class="cipher" style="position: absolute;
+			height: 100px;width: 265px;
+			right: 0; 
+			
+			margin-right:200px; 
+			margin-left:200px; 
+			margin-top: 20px;
+			background-color: rgba(137, 43, 226, 0);
+			background-image: url(static/style/cipher.png);
+			background-size:cover;
+			pointer-events: none;
+			opacity: 0.4;
+			image-rendering: pixelated;
+			"></div>	
+			
+			<script>
+				const object = document.getElementById('cipher');
+				let value = 0;
+				let x = 1;
+				let y_ = 0;
+				let ranX = 0.0;
+				object.style.left = 1;
+				    setInterval(() => {
+						x = x + 1;
+						if (x>3)
+						{
+							y_ = Math.random();
+							ranX = Math.random();
+							let c = String(1000*y_ + "px");
+							if (y_ > 0.5) 
+							{
+								object.style.left = String(100*ranX +"px");
+					
+								object.style.right = "auto";
+								//console.log("left: " + y_);
+							}
+							else
+							{
+								object.style.right = String(100*ranX +"px"); 
+								object.style.left = "auto";
+								//console.log("right: " +y_);
+							}							
+							object.style.marginTop = c;
+							//object.style.opacity = 0.5;
+							//console.log(y_);
+							x = 0;
+						}
+        			}, 5); // Меняет цвет каждую секунду
+			</script>
+			<div class="texturePageBackgroundHat" style="background-image: url(static/cold_gaze_v0.png);
+				background-size: 500px auto;
+				background-position-x: 50%;
+				background-position-y: 10%;">
+				
+				<div class="for_TexturePageBackgroundHat" style="background-color: rgba(0, 0, 0, 0);">
+					<p class="logofont"></p>
+					<p class="logofont1" style="color: greenyellow;">it's not for you </p>
+				</div>	
+			</div>
+			<div id="toolbar" class="bar"> <script src="static/items/loadToolbar.js"></script></div>
+				
+		
+		
+		<div id="two" style="
+		margin: auto;
+		display: flex;
+		background-color: rgb(104, 101, 101);
+		background-image: url(static/cold_gaze_v0.png);
+		background-size: 500px 350px;
+		background-position-x: 50%;
+		background-position-y: 10%;
+		background-attachment: fixed;
+		image-rendering: pixelated;
+		height: auto;
+		min-height: 800px;
+		width: 95%;
+		">
+			<div style="
+			display: flex;
+			flex-direction: column;
+			flex-grow: 1;
+			margin: 2%;
+			background-color: rgba(67, 67, 67, 0.0);
+			backdrop-filter: blur(0px);
+			min-height: 600px;
+			height: auto;
+			max-width: 900px;
+			margin-left: auto;
+			margin-right: auto;">
+			
+			<div id="blockForBlock" class="block" data-augmented-ui="tl-clip br-clip both" style=" 
+			height: 80%;
+			background-color:rgba(139, 0, 0, 0.531)"
+			--aug-tl: 40px;>
+			<p id="content_block" class="logofont1" style="margin-top: 30px; margin-bottom: 5px; font-size: 70px;">is block</p>
+			<p id="content_key" class="logofont1" style="margin-top: 5px; font-size: 40px;">
+			A key is required to view	
+			</p>
+			<div style=" background-image: url(static/style/block.png); background-position-x: center;
+			background-size: 300px 300px;
+			height: 300px;
+			width: 300px;
+			image-rendering:pixelated;
+			margin-left: auto;
+			margin-right: auto;"
+			>
+
+			</div>
+			<div style="position: absolute ;display: inline; left: 0; bottom: 0;
+			background-color: rgba(240, 248, 255, 0.586); padding: 5px;
+			padding-left: 10px;padding-right: 70px;
+			">
+				<input type="text" id="num1" style="width: 60px;
+				height: 30px; background-color: rgba(240, 255, 255, 0.494);
+				font-size: large;
+				color: rgb(0, 0, 0);">
+				<input type="text" id="num2" style="width: 30px;
+				height: 30px; background-color: rgba(240, 255, 255, 0.494);
+				font-size: large;
+				color: rgb(0, 0, 0);margin-left: 5px;">
+				<button onclick="validateAndRedirect();" style= "width: auto; 
+				height: 30px; font-size: large; margin-left: 5px; background-color: rgb(50, 165, 42); ">ENTER</button>
+				
+				<script>
+						function validateAndRedirect()
+						{
+							let textbox1 = document.getElementById("num1");
+							let textbox2 = document.getElementById("num2");
+							let pass = String(textbox1.value);
+							let word = String(textbox2.value);
+
+							if(pass == "1925" &&  word == "01" )
+							{
+								document.getElementById("blockForBlock").style.backgroundColor = "rgba(50, 165, 42, 0.5)" ;
+								document.getElementById("content_block").innerText = "it is open";
+								
+								document.getElementById("content_key").innerText = "rediction...";
+
+
+								setInterval(() => {
+								window.location.href = '/MLIB/wormsPage.html';
+								},600);
+							}
+							else
+							{
+								console.log("not true");
+							}
+						}
+				</script>
+			</div>
+			
+		</div>	
+				
+			</div>			
+		</div>
+
+
+		<div id="bottomPanel"></div>
+		<script src="static/items/loadBottomPanel.js"></script>
+
+		
+	</div>
+
+</body>
+</html>
+<!--script src="./js/test.js"></script-->
