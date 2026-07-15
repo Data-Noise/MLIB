@@ -22,28 +22,7 @@
     url('fonts/DigitalPixelV124-Regular.otf') format("woff2");
 }
 
-.buttonToolBar
-{
-    font-family: "HomeVideo" ;
-    font-size: 20px;
-    background-color: rgba(240, 255, 255, 0);
-    margin-left: 2px;
-    margin-right: 2px;
-    border-color: rgb(0, 0, 0);
-    margin-top: 3px;
-    margin-bottom: 3px;
-}
 
-.buttonToolBar :hover
-{
-    background-color: chocolate;
-    font-family: "HomeVideo" ;
-    font-size: 20px;
-    margin-left: 3px;
-    border-color: rgb(0, 0, 0);
-    margin-top: auto;
-    margin-bottom: auto;
-}
 
 .logofont{
     text-align: left;
@@ -75,18 +54,7 @@
     margin-top: 0px;
     background-color: rgb(76, 78, 79);
 }
-.buttonMenu
-{
-    color: rgb(152, 157, 159);
-    margin-top: 20px;
-    height: 40px;
-    margin-left: 20px;
-    margin-right: 50px;
-    text-align: left;
-    font-size: 30px;
-    background-color: rgba(0, 0, 0, 0.41);
-    font-family: "HomeVideo" ;
-}
+
 
 .mytext
 {

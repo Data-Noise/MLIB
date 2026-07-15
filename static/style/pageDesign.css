@@ -61,11 +61,14 @@
     margin: auto;
     display: flex;
     background-color: rgb(104, 101, 101);
+/*
+    убрал так как решил, что фон лучше указывать непосредственно в шаблонах страницы*/
     background-image: url(../fractal_new.png);
     image-rendering: pixelated;
     background-position-x: center;
     background-size: 1420px 2100px;
     background-attachment: fixed;
+
     min-height: 800px;
     height: auto;
     width: 95%;

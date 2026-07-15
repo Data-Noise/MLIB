@@ -128,15 +128,19 @@
     .articleListBord
     {
         
-        display: none; visibility: hidden;
+        display: none !important; 
+        
 
     }
-
+    .artlist
+    {
+        margin: 0px !important;
+    }
     .thing
     {
         min-width: auto !important;
     }
- 
+    
 }
 
 @media screen and (min-width: 600px)
