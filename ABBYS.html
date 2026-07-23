@@ -66,7 +66,7 @@
 						}
         			}, 5); // Меняет цвет каждую секунду
 			</script>
-			<div class="texturePageBackgroundHat" style="background-image: url(static/cold_gaze_v0.png);
+			<div class="texturePageBackgroundHat" id="getIt" style="background-image: url(static/cold_gaze.gif);
 				background-size: 500px auto;
 				background-position-x: 50%;
 				background-position-y: 10%;">
@@ -84,8 +84,8 @@
 		margin: auto;
 		display: flex;
 		background-color: rgb(104, 101, 101);
-		background-image: url(static/cold_gaze_v0.png);
-		background-size: 500px 350px;
+		background-image: url(static/cold_gaze.gif);
+		background-size: 500px auto;
 		background-position-x: 50%;
 		background-position-y: 10%;
 		background-attachment: fixed;
@@ -94,6 +94,28 @@
 		min-height: 800px;
 		width: 95%;
 		">
+ <script>
+        (function() {
+            var xpos = 500;
+            var element = document.getElementById("two");
+	 		var element2 = document.getElementById("getIt");
+			var mcount = 0;
+			var val = "";
+            function animate() {
+                xpos += 1;
+				mcount+=0.002;
+				if (mcount>6.28){ mcount=0.0};
+				val = (Math.sin(mcount)*500)+ "px " +(Math.cos(mcount)*500)+ "px";
+				
+				
+                element.style.backgroundPosition = val;
+				element2.style.backgroundPosition = val;
+                requestAnimationFrame(animate);
+            }
+            animate();
+        })();
+    </script>
+
 			<div style="
 			display: flex;
 			flex-direction: column;
