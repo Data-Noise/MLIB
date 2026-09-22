@@ -39,7 +39,9 @@
 			background-color: rgb(67, 67, 67, 0.9);
 			min-height: 600px;
 			height: auto;
-			width: 800px;
+			
+			max-width: 800px;
+			width: auto;
 			">
 				<div style="
 				background-color: rgb(152, 157, 159);
@@ -50,25 +52,53 @@
 			
 			</div>
 
+
+
+
+
 			<!-- =================================================================  -->
 			
-			<div class="panel" data-augmented-ui="tl-clip br-clip both">
+			<div class="panel" data-augmented-ui="tl-clip br-clip both"">
 				<div style="padding-top: 30px;">
-				<p class="mytext"><span style="color:chocolate;">KANKIT</span> 0.0.0<br>------<br> Моя реализация функций для создания слоёв сети Колмогорова-Арнольда в виде удобной <span style="color: chocolate;">C++</span> библиотеки для <span style="color: chocolate;">Python</span>. 
-					В текущий момент работает через <span style="color: chocolate;">сtypes</span>.<br>------<br> 
+				<p class="mytext"><span style="color:chocolate;">NaiveKAN</span> 0.0.0<br>------<br> Моя реализация сети Колмогорова-Арнольда, на основе сильно устаревшей функции Кокса-де Бура. В виде удобной <span style="color: chocolate;">C++</span> библиотеки для <span style="color: chocolate;">Python</span> и <span style="color: chocolate;">Godot</span>. 
+					В своей основе она использует xtensor, поэтому имеет встроенную поддержку массивов numpy.
+					
+					Собрана через <span style="color: chocolate;">pyBind11</span>.<br>------<br> 
 					Download: [ <a href="static/files/KANKIT.dll" download="KANKIT.dll" style="color: greenyellow;text-decoration: none;">KANKIT.dll</a> ] </p>	
 				</div>
 
 				<br><br>
 			</div>
 
+
+			<!-- =================================================================  -->
+
+						<div class="panel" data-augmented-ui="tl-clip br-clip both"">
+				<div style="padding-top: 30px;">
+				<p class="mytext"><span style="color:chocolate;">SNN</span> в разработке<br>------<br> Реализация простой импульсной сети на языке C++, для python и Godot.
+					
+					Собрана через <span style="color: chocolate;">pyBind11</span>.<br>------<br> 
+					
+				</div>
+
+				<br><br>
+			</div>
 			<!-- =================================================================  -->
 
 			<div class="panel" data-augmented-ui="tl-clip br-clip both">
 				<div style="padding-top: 30px;">
-				<p class="articleText">Простая реализация алгоритма <span style="color:chocolate;">Q-Learniing</span>. Шахматная фигура ищет оптимальный маршрут до красной клетки. </p>	
-				<iframe width="500px" height="315" src="https://www.youtube.com/embed/_wZ9T_zHiVM?si=TMLXJsnJ73n9i6sv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
-				style="margin-left: auto;margin-right: auto;"
+				<p class="mytext">Простая реализация алгоритма <span style="color:chocolate;">Q-Learniing</span>. Шахматная фигура ищет оптимальный маршрут до красной клетки. </p>	
+				<iframe width="auto" src="https://www.youtube.com/embed/seVXq_ZBQvQ?si=0PuUUKcarM4S7h0Q" " title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+				style=" 
+				width: auto;
+				max-width: 500px;
+				height: auto;
+				aspect-ratio: 16 / 9;
+				margin: 20px;
+				
+				border: 2px solid;
+				border-color: chocolate;
+				"
 				></iframe>
 				</div>
 

@@ -15,62 +15,24 @@
 		<link rel="stylesheet"  href="static/style/style.css">
 	</head>
 
-	<body class="pageBackground" >
+	<body class="pageBackground" 
+		style="background-color: rgb(0, 0, 0);
+		background-image: url(static/style/cipher.png);
+		
+		background-size: 300px; image-rendering: pixelated;
+		
+		">
 		<div class="pageBase" >
-			<div id="cipher" class="cipher" style="position: absolute;
-			height: 100px;width: 265px;
-			right: 0; 
+
+						
 			
-			margin-right:200px; 
-			margin-left:200px; 
-			margin-top: 20px;
-			background-color: rgba(137, 43, 226, 0);
-			background-image: url(static/style/cipher.png);
-			background-size:cover;
-			pointer-events: none;
-			opacity: 0.4;
-			image-rendering: pixelated;
-			"></div>	
 			
-			<script>
-				const object = document.getElementById('cipher');
-				let value = 0;
-				let x = 1;
-				let y_ = 0;
-				let ranX = 0.0;
-				object.style.left = 1;
-				    setInterval(() => {
-						x = x + 1;
-						if (x>3)
-						{
-							y_ = Math.random();
-							ranX = Math.random();
-							let c = String(1000*y_ + "px");
-							if (y_ > 0.5) 
-							{
-								object.style.left = String(100*ranX +"px");
-					
-								object.style.right = "auto";
-								//console.log("left: " + y_);
-							}
-							else
-							{
-								object.style.right = String(100*ranX +"px"); 
-								object.style.left = "auto";
-								//console.log("right: " +y_);
-							}							
-							object.style.marginTop = c;
-							//object.style.opacity = 0.5;
-							//console.log(y_);
-							x = 0;
-						}
-        			}, 5); // Меняет цвет каждую секунду
-			</script>
 			<div class="texturePageBackgroundHat" id="getIt" style="background-image: url(static/cold_gaze.gif);
 				background-size: 500px auto;
 				background-position-x: 50%;
 				background-position-y: 10%;">
-				
+			
+
 				<div class="for_TexturePageBackgroundHat" style="background-color: rgba(0, 0, 0, 0);">
 					<p class="logofont"></p>
 					<p class="logofont1" style="color: greenyellow;">it's not for you </p>
@@ -79,6 +41,8 @@
 			<div id="toolbar" class="bar"> <script src="static/items/loadToolbar.js"></script></div>
 				
 		
+
+
 		
 		<div id="two" style="
 		margin: auto;
