@@ -127,14 +127,31 @@
 				height: 30px; font-size: large; margin-left: 5px; background-color: rgb(50, 165, 42); ">ENTER</button>
 				
 				<script>
+						function effect()
+						{
+
+						}
+
 						function validateAndRedirect()
 						{
+
+							let PASSWORD = ["1925","01"]; 
+
+
+
+
+
 							let textbox1 = document.getElementById("num1");
 							let textbox2 = document.getElementById("num2");
 							let pass = String(textbox1.value);
 							let word = String(textbox2.value);
+							
+							 (async () => {
+							const fileText = await fetch('./static/files/data.txt').then(r => r.text());
+							console.log(fileText);
+							})();
 
-							if(pass == "1925" &&  word == "01" )
+							if(pass == PASSWORD[0] &&  word == PASSWORD[1] )
 							{
 								document.getElementById("blockForBlock").style.backgroundColor = "rgba(50, 165, 42, 0.5)" ;
 								document.getElementById("content_block").innerText = "it is open";
