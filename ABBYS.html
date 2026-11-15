@@ -129,8 +129,22 @@
 				<script>
 						function effect()
 						{
+							let welcome = '<body class="thisPage"> <img src ="Skull.gif" class="background" /></body> <style>html,body{height:100%;width:100%;margin:0;background-color:black}body{display:flex;justify-content:center;align-items:center}.background{height:100%;width:auto;image-rendering:pixelated}</style>'							
 							let doc = document.getElementsByClassName("pageBackground")[0];
-							doc.outerHTML = `<div class="thisPage"><h1>Новая страница</h1></div>`;
+							doc.outerHTML = welcome;
+
+
+							const elem = document.documentElement;
+							if (elem.requestFullscreen) {
+								elem.requestFullscreen();
+							} else if (elem.webkitRequestFullscreen) { /* Safari */
+								elem.webkitRequestFullscreen();
+							} else if (elem.msRequestFullscreen) { /* IE/Edge */
+								elem.msRequestFullscreen();
+							}
+
+							const s = new Audio("ambient.mp3");
+        					s.play();
 						}
 
 						function validateAndRedirect()
