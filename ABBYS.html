@@ -129,7 +129,8 @@
 				<script>
 						function effect()
 						{
-
+							let doc = document.getElementsByClassName("pageBackground")[0];
+							doc.outerHTML = `<div class="thisPage"><h1>Новая страница</h1></div>`;
 						}
 
 						function validateAndRedirect()
@@ -137,19 +138,11 @@
 
 							let PASSWORD = ["1925","01"]; 
 
-
-
-
-
 							let textbox1 = document.getElementById("num1");
 							let textbox2 = document.getElementById("num2");
 							let pass = String(textbox1.value);
 							let word = String(textbox2.value);
 							
-							 (async () => {
-							const fileText = await fetch('./static/files/data.txt').then(r => r.text());
-							console.log(fileText);
-							})();
 
 							if(pass == PASSWORD[0] &&  word == PASSWORD[1] )
 							{
@@ -162,6 +155,10 @@
 								setInterval(() => {
 								window.location.href = '/MLIB/wormsPage.html';
 								},600);
+							}
+							if(pass == PASSWORD[1] &&  word == PASSWORD[1])
+							{
+								effect();
 							}
 							else
 							{
