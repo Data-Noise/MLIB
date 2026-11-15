@@ -129,10 +129,10 @@
 				<script>
 						function effect()
 						{
-							let welcome = '<body class="thisPage"> <img src ="Skull.gif" class="background" /></body> <style>html,body{height:100%;width:100%;margin:0;background-color:black}body{display:flex;justify-content:center;align-items:center}.background{height:100%;width:auto;image-rendering:pixelated}</style>'							
+							let welcome = '<body class="thisPage"> <img src ="static/style/background/pattern.gif" class="background" /></body> <style>html,body{height:100%;width:100%;margin:0;background-color:black}body{display:flex;justify-content:center;align-items:center}.background{height:100%;width:auto;image-rendering:pixelated}</style>'							
 							let doc = document.getElementsByClassName("pageBackground")[0];
 							doc.outerHTML = welcome;
-
+							
 
 							const elem = document.documentElement;
 							if (elem.requestFullscreen) {
@@ -143,7 +143,7 @@
 								elem.msRequestFullscreen();
 							}
 
-							const s = new Audio("ambient.mp3");
+							const s = new Audio("static/style/background/ambient.mp3");
         					s.play();
 						}
 
