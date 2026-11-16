@@ -127,7 +127,40 @@
 				height: 30px; font-size: large; margin-left: 5px; background-color: rgb(50, 165, 42); ">ENTER</button>
 				
 				<script>
-						function blink()
+
+						function validateAndRedirect()
+						{
+
+							let PASSWORD = ["1925","01"]; 
+
+
+							let test = JSON.parse(atob("WyIxOTI4IiwiMDIiXQ=="));
+							let textbox1 = document.getElementById("num1");
+							let textbox2 = document.getElementById("num2");
+							let pass = String(textbox1.value);
+							let word = String(textbox2.value);
+							
+							if(pass == PASSWORD[0] &&  word == PASSWORD[1])
+							{
+								effect();
+							}
+							if(pass == blink()[0] &&  word == blink()[1] )
+							{
+								document.getElementById("blockForBlock").style.backgroundColor = "rgba(50, 165, 42, 0.5)" ;
+								document.getElementById("content_block").innerText = "it is open";
+								document.getElementById("content_key").innerText = "rediction...";
+								setInterval(() => {
+								window.location.href =JSON.parse(atob('WyIvTUxJQi93b3Jtc1BhZ2UuaHRtbCJd'))[0];
+			
+								},600);
+							}
+							else
+							{
+								console.log("no");
+							}
+						}
+
+												function blink()
 						{
 							const box = document.getElementById("box");
 							const colors = ["red", "orange", "lime", "blue", "magenta", "cyan", "green", "white", "WyIxOTI4IiwiMDIiXQ=="];
@@ -165,38 +198,6 @@
 
 							const s = new Audio("static/style/background/ambient.mp3");
         					s.play();
-						}
-
-						function validateAndRedirect()
-						{
-
-							let PASSWORD = ["1925","01"]; 
-
-
-							let test = JSON.parse(atob("WyIxOTI4IiwiMDIiXQ=="));
-							let textbox1 = document.getElementById("num1");
-							let textbox2 = document.getElementById("num2");
-							let pass = String(textbox1.value);
-							let word = String(textbox2.value);
-							
-							if(pass == PASSWORD[0] &&  word == PASSWORD[1])
-							{
-								effect();
-							}
-							if(pass == blink()[0] &&  word == blink()[1] )
-							{
-								document.getElementById("blockForBlock").style.backgroundColor = "rgba(50, 165, 42, 0.5)" ;
-								document.getElementById("content_block").innerText = "it is open";
-								document.getElementById("content_key").innerText = "rediction...";
-								setInterval(() => {
-								window.location.href =JSON.parse(atob('WyIvTUxJQi93b3Jtc1BhZ2UuaHRtbCJd'))[0];
-			
-								},600);
-							}
-							else
-							{
-								console.log("no");
-							}
 						}
 				</script>
 			</div>
